@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        
+        <style>
+body {
+    margin:3vh 2vw;
+    background:darkblue;
+    font-family:"Roboto",sans-serif;
+    font-size:18px;
+    color:white;
+}
+
+.mid {
+   display:flex;
+   flex-direction:column;
+}
+
+.mid * {
+    margin:auto;
+    position:relative;
+}
+
+#mugshot {
+    border-radius:360%;
+    overflow:hidden;
+    width:50vw;
+    height:50vw;
+}
+
+#mugshot img {
+    width:90vw;
+    translate:-22%;
+}
+
+.mid .name {
+    margin-top:2vh;
+    font-size:30px;
+    height:30px;
+    font-weight:bold;
+}
+
+table
+{
+   display : inline-block;
+   margin : 12px 0 10px;
+   max-width : 100%;
+   color : black;
+   border : 1px solid white;
+   border-collapse : collapse;
+   overflow : auto;
+}
+
+tr, td
+{
+    padding : 10px;
+    border : 1px solid white;
+}
+
+tr
+{
+    background : rgba(255, 255, 255, 0.5);
+}
+
+tr a
+{
+    color : darkgreen;
+}
+
+tr:nth-child(even)
+{
+    background-color: rgba(255, 255, 255, 0.37);
+}
+
+tr:nth-child(even) a
+{
+    color : lightgreen;
+}
+
+br {
+    display:block;
+    content: "";    
+    font-size:1px;
+}
+
+a
+{
+    color : orange;
+}
+        </style>
+    </head>
+    
+    <body>
+        <div class="mid" style="margin-bottom:4vh">
+            <div id="mugshot">
+                <img src="img/mugshot.jpeg">
+            </div>
+            <div class="name">MrBeast</div>
+        </div>
+        
+        <div class="mid"><table>
+            <tr>
+                    <td>
+                        Real Name
+                    </td>
+                    <td>
+                        Jimmy Donaldson
+                    </td>
+            </tr>
+            <tr>
+                    <td>
+                        Born
+                    </td>
+                    <td>
+                        May 17, 1998 Kansas, U.S.
+                    </td>
+            </tr>
+            <tr>
+                    <td>
+                        Time Period
+                    </td>
+                    <td>
+                        1998 - Present
+                    </td>
+            </tr>
+            <tr>
+                    <td>
+                        Age
+                    </td>
+                    <td id="age">
+                        ERORR
+                    </td>
+            </tr>
+            <tr>
+                    <td>
+                        Location
+                    </td>
+                    <td>
+                        Greenville, North Carolina, U.S.
+                    </td>
+            </tr>
+            <tr>
+                    <td>
+                        Jobs
+                    </td>
+                    <td>
+                        YouTuber<br style="margin:15px">
+                        Philanthropist<br style="margin:15px">
+                        Businessman
+                    </td>
+            </tr>
+        </table></div>
+        
+<div style="margin:auto 2vw; white-space:pre-wrap">
+Jimmy Donaldson formerly known as MrBeast is an American YouTuber known for giving away money, crazy stunts and challenges. He made a channel called <a href="https://youtube.com/user/mrbeast6000">MrBeast6000(now MrBeast)</a> and started making videos since he was 13(early 2012). On 2017, Jimmy went viral due to a video called <a href="https://youtu.be/9Ax56oRhcZc">Counting To 10000 In One Sitting</a> which had a sequel called <a href="https://youtu.be/xWcldHxHFpo">I Counted To 100,000!</a>.
+
+<div class="mid"><img></div>
+
+
+After that, he became very popular and most of his videos started gaining millions and millions of views. After a while, Jimmy started including challenges and giving away money in his content.
+
+He also started successful fundraisers with a former NASA engineer and YouTuber Mark Rober, which includes Team Trees. The goal of Team Trees is to raise $20 million which was surpassed and the fundraiser received over $23.89 million. In Team Trees they plant trees, $1 is equivalent to 1 tree. Which means they have planted over 23.89 million trees all over the world.
+
+
+<div class="mid"><img></div>
+
+They also started another successful fundraiser, this time it's called Team Seas. In Team Seas the goal is to raise $30 million. This is similar to Team Trees. But the goal is to remove 30 million pounds of trash in the sea, $1 is equal to 1 pound. The fundraiser finished and raised over the goal, and they are removing trash as of today.
+
+
+<div class="mid"><img></div>
+
+Jimmy also made another YouTube channel featuring helping people, charity and giving away essentials, called Beast Philanthropy. All of it's profit goes to charity.
+</div>
+        
+        <script>
+window.onload = () => {
+    requestUpdate();
+};
+
+const age = document.querySelector("#age");
+const born = new Date("1998-05-17");
+
+function requestUpdate ()
+{
+    requestAnimationFrame(update.bind(this));
+}
+
+function update ()
+{
+    let old = new Date().getFullYear() - born.getFullYear();
+    
+    age.textContent = `${old} years old`;
+    
+    requestUpdate();
+}
+        </script>
+    </body>
+</html>
