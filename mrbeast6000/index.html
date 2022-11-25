@@ -5,6 +5,48 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
         
+        
+        <link rel="preload" href="img/mugshot.jpeg" as="image">
+        <link rel="preload" href="img/10000.png" as="image">
+        <link rel="preload" href="img/100000.png" as="image">
+        <link rel="preload" href="img/trees.png" as="image">
+        <link rel="preload" href="img/seas.png" as="image">
+        <link rel="preload" href="img/worter.png" as="image">
+        
+        
+        <!------------SEO-->
+        <!--Type--><meta property="og:type" content="website"/>
+        <!--Title--><meta property="og:title" content="I Love MrBeast"/>
+        <!--URL--><meta property="og:url" content="https://calmbubbles.github.io/school/mrbeast6000"/>
+        <!--Locale--><meta property="og:locale" content="en_US"/>
+        <!--Keywords--><meta name="keywords" content="MrBeast, MrBeast6000, English, Grade 9, 9, Making Cultural Connections Project">
+        
+        <!-------Description-->
+        <meta property="og:description" content="This is my output for the activity, Making Cultural Connections Project in English 9. The Community Idol I chose is MrBeast. Making this was very fun."/>
+        <meta name="description" content="This is my output for the activity, Making Cultural Connections Project in English 9. The Community Idol I chose is MrBeast. Making this was very fun."/>
+        
+        <!-------Image-->
+        <meta property="og:image" content="https://calmbubbles.github.io/school/mrbeast6000/img/icon.jpg"/>
+        <!--Width--><meta property="og:image:width" content="357"/>
+        <!--Height--><meta property="og:image:height" content="357"/>
+        <!--Alt--><meta property="og:image:alt" content="I Love MrBeast"/>
+        
+        <!-------Twitter Card-->
+        <!--Type--><meta name="twitter:card" content="summary"/>
+        <!--Title--><meta name="twitter:title" content="I Love MrBeast"/>
+        <!--Description--><meta name="twitter:description" content="This is my output for the activity, Making Cultural Connections Project in English 9. The Community Idol I chose is MrBeast. Making this was very fun."/>
+        <!--Image--><meta name="twitter:image" content="https://calmbubbles.github.io/school/mrbeast6000/img/icon.jpg"/>
+        
+        
+        <!------------Site-->
+        <!--Title--><title>I Love MrBeast</title>
+        <!--URL--><link rel="canonical" href="https://calmbubbles.github.io"/>
+        
+        <!-------Favicon-->
+        <link rel="icon" sizes="256x256" href="img/icon.jpg" type="image/x-icon"/>
+        <link rel="shortcut icon" href="img/icon.jpg" type="image/x-icon"/>
+        
+        
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -16,6 +58,36 @@ body {
     font-family:"Roboto",sans-serif;
     font-size:18px;
     color:white;
+    overflow-y:hidden;
+    text-size-adjust : none;
+}
+
+.fadeObject
+{
+    background : darkblue;
+    border : none;
+    position : fixed;
+    margin : 0;
+    padding : 0;
+    top : 0;
+    bottom : 0;
+    left : 0;
+    right : 0;
+    z-index : 420;
+    transition : all 2s;
+}
+
+img {
+    width:100%;
+    border-radius:4%;
+}
+
+.img {
+    font-size:15px;
+}
+
+.img span {
+    margin-top:8px;
 }
 
 .mid {
@@ -33,55 +105,52 @@ body {
     overflow:hidden;
     width:50vw;
     height:50vw;
+    max-width:450px;
+    max-height:450px;
 }
 
 #mugshot img {
     width:90vw;
+    max-width:810px;
     translate:-22%;
 }
 
 .mid .name {
     margin-top:2vh;
-    font-size:30px;
-    height:30px;
+    font-size:36px;
+    height:36px;
     font-weight:bold;
 }
 
-table
-{
-   display : inline-block;
-   margin : 12px 0 10px;
-   max-width : 100%;
-   color : black;
-   border : 1px solid white;
-   border-collapse : collapse;
-   overflow : auto;
+table {
+   display:inline-block;
+   margin:12px 0 10px;
+   max-width:100%;
+   color:black;
+   border:1px solid white;
+   border-collapse:collapse;
+   overflow:auto;
 }
 
-tr, td
-{
-    padding : 10px;
-    border : 1px solid white;
+tr, td {
+    padding:10px;
+    border:1px solid white;
 }
 
-tr
-{
-    background : rgba(255, 255, 255, 0.5);
+tr {
+    background:rgba(255, 255, 255, 0.5);
 }
 
-tr a
-{
-    color : darkgreen;
+tr a {
+    color:darkgreen;
 }
 
-tr:nth-child(even)
-{
-    background-color: rgba(255, 255, 255, 0.37);
+tr:nth-child(even) {
+    background-color:rgba(255, 255, 255, 0.37);
 }
 
-tr:nth-child(even) a
-{
-    color : lightgreen;
+tr:nth-child(even) a {
+    color:lightgreen;
 }
 
 br {
@@ -90,14 +159,54 @@ br {
     font-size:1px;
 }
 
-a
-{
+a {
     color : orange;
+}
+
+#quote {
+    margin:3vh 2vw;
+    font-size:24px;
+}
+
+#quote q {
+    font-size:30px;
+    font-weight:bold;
+    display:block;
+    width:90vw;
+    max-width:300px;
+    text-align:center;
+}
+
+#quote div div {
+    direction:rtl;
+    padding-right:20px;
+}
+
+.fun
+{
+    overflow : auto;
+    margin : 12px auto;
+    padding : 12px;
+    border : 1px solid white;
+    border-radius : 4px;
+    color : black;
+    background : rgba(255, 255, 255, 0.5);
+}
+
+.fun span {
+    font-weight:bold;
+}
+
+.fun a
+{
+    color : darkgreen;
 }
         </style>
     </head>
     
     <body>
+        <hr class="fadeObject">
+        
         <div class="mid" style="margin-bottom:4vh">
             <div id="mugshot">
                 <img src="img/mugshot.jpeg">
@@ -134,8 +243,8 @@ a
                     <td>
                         Age
                     </td>
-                    <td id="age">
-                        ERORR
+                    <td>
+                        <span id="age">ERROR</span> years old
                     </td>
             </tr>
             <tr>
@@ -158,31 +267,217 @@ a
             </tr>
         </table></div>
         
+        <div id="quote" class="mid"><div>
+            <q>
+                You gotta fail for the most part to learn.
+            </q>
+            <div>MrBeast—</div>
+        </div></div>
+        
 <div style="margin:auto 2vw; white-space:pre-wrap">
-Jimmy Donaldson formerly known as MrBeast is an American YouTuber known for giving away money, crazy stunts and challenges. He made a channel called <a href="https://youtube.com/user/mrbeast6000">MrBeast6000(now MrBeast)</a> and started making videos since he was 13(early 2012). On 2017, Jimmy went viral due to a video called <a href="https://youtu.be/9Ax56oRhcZc">Counting To 10000 In One Sitting</a> which had a sequel called <a href="https://youtu.be/xWcldHxHFpo">I Counted To 100,000!</a>.
+Jimmy Donaldson formerly known as MrBeast is an American YouTuber known for giving away money, crazy stunts and challenges. He made a channel called <a href="https://youtube.com/user/mrbeast6000" target="_blank" rel="noreferrer noopener">MrBeast6000(now MrBeast)</a> and started making videos since he was 13(early 2012). On 2017, Jimmy went viral due to a video called <a href="https://youtu.be/9Ax56oRhcZc" target="_blank" rel="noreferrer noopener">Counting To 10000 In One Sitting</a> which had a sequel called <a href="https://youtu.be/xWcldHxHFpo" target="_blank" rel="noreferrer noopener">I Counted To 100,000!</a>.
 
-<div class="mid"><img></div>
+<div class="fun"><span>Fun Fact:</span> MrBeast's <a href="https://youtu.be/9Ax56oRhcZc" target="_blank" rel="noreferrer noopener">first video</a> was a Minecraft video.</div>
+
+<div class="mid img"><img src="img/10000.png"><span>Jimmy doing what he promised in the video "Counting To 10000 In One Sitting"</span><br style="margin:14px"><img src="img/100000.png"><span>Jimmy about lose his mind in the video "I Counted To 100,000!"</span></div>
 
 
 After that, he became very popular and most of his videos started gaining millions and millions of views. After a while, Jimmy started including challenges and giving away money in his content.
 
-He also started successful fundraisers with a former NASA engineer and YouTuber Mark Rober, which includes Team Trees. The goal of Team Trees is to raise $20 million which was surpassed and the fundraiser received over $23.89 million. In Team Trees they plant trees, $1 is equivalent to 1 tree. Which means they have planted over 23.89 million trees all over the world.
+He also started successful fundraisers with a former NASA and Apple engineer and YouTuber <a href="https://youtube.com/c/MarkRober" target="_blank" rel="noreferrer noopener">Mark Rober</a>, which includes <a href="https://teamtrees.org" target="_blank" rel="noreferrer noopener">Team Trees</a>. The goal of Team Trees is to raise $20 million which was surpassed and the fundraiser received over $24 million. In Team Trees they plant trees, $1 is equivalent to 1 tree. Which means they will plant over 24 million trees. As of today they have planted over 20 million trees.
 
 
-<div class="mid"><img></div>
+<div class="mid img"><img src="img/trees.png"><span>Jimmy's fans about to help him plant trees in the video <a href="https://youtu.be/HPJKxAhLw5I" target="_blank" rel="noreferrer noopener">Planting 20,000,000 Trees, My Biggest Project Ever!</a></span></div>
 
-They also started another successful fundraiser, this time it's called Team Seas. In Team Seas the goal is to raise $30 million. This is similar to Team Trees. But the goal is to remove 30 million pounds of trash in the sea, $1 is equal to 1 pound. The fundraiser finished and raised over the goal, and they are removing trash as of today.
+They also started another successful fundraiser, this time it's called <a href="https://teamseas.org" target="_blank" rel="noreferrer noopener">Team Seas</a>. In Team Seas the goal is to raise $30 million. This is similar to Team Trees. But the goal is to remove 30 million pounds of trash in the sea, $1 is equal to 1 pound. The fundraiser raised over the goal, and they have removed over 33 million pounds of trash as of today.
 
 
-<div class="mid"><img></div>
+<div class="mid img"><img src="img/seas.png"><span>People in the pandemic about to help Jimmy clean the sea in the video <a href="https://youtu.be/cV2gBU6hKfY" target="_blank" rel="noreferrer noopener">I Cleaned The World’s Dirtiest Beach #TeamSeas</a></span></div>
 
-Jimmy also made another YouTube channel featuring helping people, charity and giving away essentials, called Beast Philanthropy. All of it's profit goes to charity.
+<div class="fun"><span>Fun Fact:</span> Over million content creators promoted the Team Seas fundraiser.</div>
+
+Jimmy also made another YouTube channel featuring helping people, charity and giving away essentials, called <a href="https://youtube.com/@BeastPhilanthropy" target="_blank" rel="noreferrer noopener">Beast Philanthropy</a>. All of it's profit goes to making the world a better place.
+
+
+<div class="mid img"><img src="img/worter.png"><span>Found a water source in the video <a href="https://youtu.be/aSQUg-h8G4s" target="_blank" rel="noreferrer noopener">We Built Wells in Africa!</a></span></div>
+
+Other than that, Jimmy won several creator awards. In 2019, he won the "Breakout Creator" award from the 9th Streamy Awards. In 2020, he won the "YouTuber of the Year" award from the 12th Annual Shorty Awards, he also won "Creator of the Year", "Live Special", "Social Good: Creator", "Social Good: Nonprofit or NGO" awards from the 10th Streamy Awards. In 2021, he won the "Creator of the Year" award from the 11th Streamy Awards. In 2022, he won the "Favorite Male Creator" award from the 2022 Kids' Choice Awards.
+
+As of today MrBeast is the most subscribed YouTube channel owned by an individual, with a subscriber count over 113 million.
+
+
+</div>
+        
+        <div class="mid"><table>
+            <tr>
+                    <td style="font-weight:bold;font-size:20px;text-align:center">
+                        Accomplishments
+                    </td>
+            </tr>
+            <tr>
+                    <td>
+                        Raised $20,000,000 To Plant 20,000,000 Trees
+                    </td>
+            </tr>
+            <tr>
+                    <td>
+                        Given millions to charity
+                    </td>
+            </tr>
+            <tr>
+                    <td>
+                        Donated over 100 cars
+                    </td>
+            </tr>
+            <tr>
+                    <td>
+                        Gave away a private island
+                    </td>
+            </tr>
+            <tr>
+                    <td>
+                        Given away over 100 ps4s
+                    </td>
+            </tr>
+            <tr>
+                    <td>
+                        Gave away 1 million dollars in one video
+                    </td>
+            </tr>
+            <tr>
+                    <td>
+                        Counted to 100k
+                    </td>
+            </tr>
+            <tr>
+                    <td>
+                        Read the Dictionary
+                    </td>
+            </tr>
+            <tr>
+                    <td>
+                        Watched Dance Till You're Dead For 10 Hours
+                    </td>
+            </tr>
+            <tr>
+                    <td>
+                        Read Bee Movie Script
+                    </td>
+            </tr>
+            <tr>
+                    <td>
+                        Read Longest English Word
+                    </td>
+            </tr>
+            <tr>
+                    <td>
+                        Watched Paint Dry
+                    </td>
+            </tr>
+            <tr>
+                    <td>
+                        Ubering Across America
+                    </td>
+            </tr>
+            <tr>
+                    <td>
+                        Watched It's Every Day Bro For 10 Hours
+                    </td>
+            </tr>
+            <tr>
+                    <td>
+                        Ran a marathon in the world's largest shoes
+                    </td>
+            </tr>
+            <tr>
+                    <td>
+                        Adopted every dog in a shelter
+                    </td>
+            </tr>
+            <tr>
+                    <td>
+                        Became the most subscribed YouTube channel owned by an individual
+                    </td>
+            </tr>
+            <tr>
+                    <td>
+                        Raised $30,000,000 To Remove $30,000,000 Trash From The Sea
+                    </td>
+            </tr>
+        </table></div>
+        
+<div style="margin:auto 2vw; white-space:pre-wrap">
+
+I love MrBeast, because of their content and personality. Jimmy's content is always entertaining yet still helpful and influences people in a good way. Jimmy always puts their heart to whatever they are making. He loves making people smile. He gives away money because it makes him happy. He is rich and poor at the same time. Every month he gets a revenue of $2 million from making content, but most of it goes to charity and content creation. Jimmy is a kind and selfless person. Jimmy has determination, patience and perseverance. He wanted to work as a content creator ever since he was 13. He failed many times, but he never gave up and never let himself down. It took him most of his teenage life, but he waited with action and got to his goal. Jimmy is an inspiration for a lot of people, including me.
+
+We are similar in some ways
+</div>
+        
+        <div class="mid"><table>
+            <tr>
+                    <td style="font-weight:bold;font-size:20px;text-align:center">
+                        My Similarities With MrBeast
+                    </td>
+            </tr>
+            <tr>
+                    <td>
+                        Love making content
+                    </td>
+            </tr>
+            <tr>
+                    <td>
+                        Like making people smile
+                    </td>
+            </tr>
+            <tr>
+                    <td>
+                        Patience
+                    </td>
+            </tr>
+            <tr>
+                    <td>
+                        Too complex goals
+                    </td>
+            </tr>
+            <tr>
+                    <td>
+                        Likes helping people
+                    </td>
+            </tr>
+        </table></div>
+        
+<div style="margin:auto 2vw; white-space:pre-wrap; font-size:16px">
+
+
+
+Made by CalmBubbles (Marc Philip Landicho) from Grade 9 Hydrogen for English 9 Learning Activty 8, Making Cultural Connections Project.
 </div>
         
         <script>
 window.onload = () => {
+    loadFade();
     requestUpdate();
 };
+
+
+//-----
+
+
+async function loadFade ()
+{
+    const fadel = document.querySelector(".fadeObject");
+    
+    fadel.style.opacity = "0";
+    
+    await new Promise(resolve => setTimeout(resolve, 2000));
+    
+    fadel.style.pointerEvents = "none";
+    
+    document.body.style.overflowY = "auto";
+}
+
+
+//-----
 
 const age = document.querySelector("#age");
 const born = new Date("1998-05-17");
@@ -196,7 +491,7 @@ function update ()
 {
     let old = new Date().getFullYear() - born.getFullYear();
     
-    age.textContent = `${old} years old`;
+    age.textContent = `${old}`;
     
     requestUpdate();
 }
